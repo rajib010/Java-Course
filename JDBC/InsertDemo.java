@@ -1,7 +1,7 @@
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Connection;
 
 public class InsertDemo {
 
@@ -27,6 +27,7 @@ public class InsertDemo {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
+        
             try {
                 if (ps != null) {
                     ps.close();
