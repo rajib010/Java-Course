@@ -1,7 +1,7 @@
     //basic login form interface using java swing
 
-    import javax.swing.*;
     import java.awt.event.*;
+    import javax.swing.*;
 
     public class LoginForm extends JFrame implements ActionListener {
 
@@ -71,11 +71,12 @@
             setDefaultCloseOperation(EXIT_ON_CLOSE);
             setVisible(true);
         }
-
+        @Override
         public void actionPerformed(ActionEvent e){
+
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
-            String userType = adminType.isSelected()?"admin":"user";
+            String userType = adminType.isSelected() ? "admin" :"user";
 
             //display the variables as per requirement
             System.out.println("Username: "+username);
